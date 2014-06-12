@@ -1,0 +1,5 @@
+Programs:
+sema 
+
+An utility to create, delete, raise, wait on a named semaphore. This program is distributed under the GPL version 2 license. See the file INSTALL for installation instructions.
+
