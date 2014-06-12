@@ -8,5 +8,5 @@ BUILD:
 Type make at the top level directory and it should build the executable named 'sema'.
 
 INSTALL:
-Copy the executable 'sema' to /usr/local/bin or /usr/bin.
+Either make install or copy the executable 'sema' to /usr/local/bin or /usr/bin.
 
