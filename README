@@ -30,7 +30,7 @@ _____________________________________________
 
 echo Hello from B.sh
 sleep 5
-./sema -r S1
+sema -r S1
 echo Bye bye from B.sh
 ____________________________________________
 
