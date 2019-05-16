@@ -3,7 +3,7 @@
 
 CXX = gcc
 LIBS = -lpthread
-CPP_FLAGS = -g -Wall -Wextra -pedantic
+CPP_FLAGS = -g -Wall -Wextra -pedantic -pthread
 EXEC = sema
 SRC = sema.c
 EXEC_INSTALL_DIR = /usr/bin
@@ -12,7 +12,7 @@ DOC_INSTALL_DIR = /usr/share/doc/sema
 OBJS = $(SRC:.c=.o)
 DOC_OBJS = AUTHORS INSTALL LICENSE README
 
-%.o: %.cc
+%.o: %.c
 	$(CXX)  $(CPP_FLAGS) -c $< -o $@
 
 .PHONY: all
@@ -20,7 +20,7 @@ all: $(EXEC)
 
 
 $(EXEC): $(OBJS)
-	$(CXX)  -o $(EXEC) $(LIBS) $(OBJS)
+	$(CXX)  -o $(EXEC) $(LIBS) -pthread $(OBJS)
 
 
 install: all
