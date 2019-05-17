@@ -35,3 +35,7 @@ echo Bye bye from B.sh
 ____________________________________________
 
 
+Troubleshooting:
+If a shell script fails and leaves a semaphore with negative values, it is not possible to delete it. In that case, raise the value of semaphore by raising it manually by executing sema -r S1 and then delete it using sema -d S1
+
+
